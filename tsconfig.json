@@ -17,18 +17,11 @@
     "alwaysStrict": true /* Parse in strict mode and emit "use strict" for each source file. */,
     "useUnknownInCatchVariables": false,
 
-    "paths": {
-      // Allow live types updates from vscode while editing the types package
-      "@lafourchette/gift-card-service-types/dist/*": ["./packages/types/src/*"],
-    },
-
     /* Module Resolution Options */
     "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
     "allowSyntheticDefaultImports": false /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
     "resolveJsonModule": true /* Include modules imported with '.json' extension */,
     "esModuleInterop": false /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
     "skipLibCheck": true /* Ignore type errors from unused methods in external libraries -- see <https://stackoverflow.com/questions/52311779/usage-of-the-typescript-compiler-argument-skiplibcheck> */
-  },
-  "include": ["packages/types/src/**/*", "**/.eslintrc.js", "jest.config.js", "package.json", "newrelic.js", "config/**/*", "src/**/*", "bin/**/*", "test/**/*", "features/**/*"],
-  "exclude": ["packages/types/src/index.ts"]
+  }
 }

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "ts-node": "ts-node index.ts",
-    "node": "node index.mjs",
+    "esm-node": "node index.mjs",
     "jest": "jest jest.nock.test.ts",
     "vitest": "vitest run vitest.nock.test.ts"
   },

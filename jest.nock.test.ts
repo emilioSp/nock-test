@@ -1,4 +1,5 @@
 import * as nock from 'nock';
+import * as config from 'config';
 
 describe('nock test', () => {
   it('should work', () => {
@@ -8,6 +9,7 @@ describe('nock test', () => {
         expect(body).toEqual('echo');
         return true;
       });
+    expect(config.test.dbConfig.host).toStrictEqual('localhost')
     expect(1).toStrictEqual(1);
   })
 })
